@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.auto.service:auto-service:1.0-rc2'// 用于自动为 JAVA Processor 生成 META-INF 信息。
+    compile 'com.squareup:javapoet:1.7.0'//  squareup 公司，用于生成 .java 源文件的 API。
+    compile project(':view-annotation')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
