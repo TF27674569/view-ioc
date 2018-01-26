@@ -12,7 +12,6 @@ import org.api.ViewUtils;
 
 public class MainActivity extends AppCompatActivity {
 
-
     //click1
     @ViewById(R.id.click1)
     public Button click1;
@@ -27,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         ViewUtils.bindActivity(this);
     }
 
-
     @Event({R.id.click1, R.id.click2})
     @EchoEnable(1000)
     public void click1Click(Button click1) {
@@ -36,10 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Event(R.id.click2)
     public void click2Click(Button click2) {
-        Toast.makeText(
-                this,
-                "click2",
-                Toast.LENGTH_SHORT
-        ).show();
+        Toast.makeText(this, "click2", Toast.LENGTH_SHORT).show();
     }
 }
