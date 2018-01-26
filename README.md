@@ -2,7 +2,7 @@
 # 编译时注解库
 
 ###   maven { url 'https://jitpack.io' }
-###   compile 'com.github.TF27674569:ViewById:v1.2'
+###   compile 'com.github.TF27674569:ViewById:v1.3'
 
 
 
